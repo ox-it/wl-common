@@ -130,6 +130,7 @@ public class ResourcesHandler implements HandlesImportable {
 //				}
 				title = fileName;
 				resourceProps.put(ResourceProperties.PROP_DESCRIPTION, description);
+				resourceProps.put(ResourceProperties.PROP_CONTENT_PRIORITY, Integer.toString(((FileResource)thing).getSequenceNum()));
 
 				
 				if (title.toLowerCase().endsWith(".zip")) {
@@ -228,6 +229,7 @@ public class ResourcesHandler implements HandlesImportable {
 				resourceProps.put(ResourceProperties.PROP_DISPLAY_NAME, title);
 	  			resourceProps.put(ResourceProperties.PROP_DESCRIPTION, description);
 	  			resourceProps.put(ResourceProperties.PROP_COPYRIGHT, COPYRIGHT);
+				resourceProps.put(ResourceProperties.PROP_CONTENT_PRIORITY, Integer.toString(((Folder)thing).getSequenceNum()));
 	  			/*
 	  			 * Added title to the end of the path. Otherwise, we're setting the props on the 
 	  			 * containing folder rather than the folder itself.
