@@ -9,7 +9,7 @@
 
     <name>Sakai Common Project</name>
     <groupId>org.sakaiproject.common</groupId>
-    <version>1.1.6-SNAPSHOT</version>
+    <version>1.1.6ox1-SNAPSHOT</version>
     <artifactId>common</artifactId>
     <packaging>pom</packaging>
 
@@ -18,9 +18,8 @@
     </properties>
 
     <scm>
-        <connection>scm:svn:https://source.sakaiproject.org/svn/common/branches/common-1.1.x</connection>
-        <developerConnection>scm:svn:https://source.sakaiproject.org/svn/common/branches/common-1.1.x</developerConnection>
-        <url>https://source.sakaiproject.org/svn/common/branches/common-1.1.x</url>
+            <connection>scm:git:git://git-repo.oucs.ox.ac.uk/git/repos/local-version/sakai/common.git</connection>
+            <developerConnection>scm:git:ssh://git-repo.oucs.ox.ac.uk/~git/repos/local-version/sakai/common.git</developerConnection>
     </scm>
 
     <modules>
@@ -51,11 +50,14 @@
     </modules>
 	
     <distributionManagement>
-        <site>
-            <id>sakai-site</id>
-            <name>Sakai release Site</name>
-            <url>scpexe://source.sakaiproject.org/var/www/html/release/common/${project.version}</url>
-        </site>
+        <repository>
+            <id>maven-repo.oucs</id>
+            <url>http://maven-repo.oucs.ox.ac.uk/content/repositories/releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>maven-repo.oucs</id>
+            <url>http://maven-repo.oucs.ox.ac.uk/content/repositories/snapshots</url>
+        </snapshotRepository>
     </distributionManagement>
 
     <pluginRepositories>
@@ -115,84 +117,84 @@
             <dependency>
                 <groupId>org.sakaiproject.common</groupId>
                 <artifactId>sakai-common-composite-component</artifactId>
-                <version>1.1.6-SNAPSHOT</version>
+                <version>1.1.6ox1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>org.sakaiproject.common</groupId>
                 <artifactId>sakai-common-manager-api</artifactId>
-                <version>1.1.6-SNAPSHOT</version>
+                <version>1.1.6ox1-SNAPSHOT</version>
                 <scope>provided</scope>
             </dependency>
             <dependency>
                 <groupId>org.sakaiproject.common</groupId>
                 <artifactId>sakai-common-type-api</artifactId>
-                <version>1.1.6-SNAPSHOT</version>
+                <version>1.1.6ox1-SNAPSHOT</version>
                 <scope>provided</scope>
             </dependency>
             <dependency>
                 <groupId>org.sakaiproject.common</groupId>
                 <artifactId>sakai-common-edu-person-api</artifactId>
-                <version>1.1.6-SNAPSHOT</version>
+                <version>1.1.6ox1-SNAPSHOT</version>
                 <scope>provided</scope>
             </dependency>
             <dependency>
                 <groupId>org.sakaiproject.common</groupId>
                 <artifactId>sakai-common-composite-component-data</artifactId>
-                <version>1.1.6-SNAPSHOT</version>
+                <version>1.1.6ox1-SNAPSHOT</version>
                 <scope>provided</scope>
             </dependency>
             <dependency>
                 <groupId>org.sakaiproject.common</groupId>
                 <artifactId>sakai-privacy-hbm</artifactId>
-                <version>1.1.6-SNAPSHOT</version>
+                <version>1.1.6ox1-SNAPSHOT</version>
                 <scope>provided</scope>
             </dependency>
             <dependency>
                 <groupId>org.sakaiproject.common</groupId>
                 <artifactId>sakai-privacy-api</artifactId>
-                <version>1.1.6-SNAPSHOT</version>
+                <version>1.1.6ox1-SNAPSHOT</version>
                 <scope>provided</scope>
             </dependency>
             <dependency>
                 <groupId>org.sakaiproject.common</groupId>
                 <artifactId>sakai-privacy-impl</artifactId>
-                <version>1.1.6-SNAPSHOT</version>
+                <version>1.1.6ox1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>org.sakaiproject.common</groupId>
                 <artifactId>archive-api</artifactId>
-                <version>1.1.6-SNAPSHOT</version>
+                <version>1.1.6ox1-SNAPSHOT</version>
                 <scope>provided</scope>
             </dependency>
             <dependency>
                 <groupId>org.sakaiproject.common</groupId>
                 <artifactId>archive-impl2</artifactId>
-                <version>1.1.6-SNAPSHOT</version>
+                <version>1.1.6ox1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>org.sakaiproject.common</groupId>
                 <artifactId>archive-impl</artifactId>
-                <version>1.1.6-SNAPSHOT</version>
+                <version>1.1.6ox1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>org.sakaiproject.common</groupId>
                 <artifactId>import-impl</artifactId>
-                <version>1.1.6-SNAPSHOT</version>
+                <version>1.1.6ox1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>org.sakaiproject.common</groupId>
                 <artifactId>sakai-import-content</artifactId>
-                <version>1.1.6-SNAPSHOT</version>
+                <version>1.1.6ox1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>org.sakaiproject.common</groupId>
                 <artifactId>common-cartridge</artifactId>
-                <version>1.1.6-SNAPSHOT</version>
+                <version>1.1.6ox1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>org.sakaiproject.common</groupId>
                 <artifactId>sakai-archive-import</artifactId>
-                <version>1.1.6-SNAPSHOT</version>
+                <version>1.1.6ox1-SNAPSHOT</version>
             </dependency>
 
             <!-- external dependencies -->
